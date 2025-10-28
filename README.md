@@ -128,7 +128,7 @@ function calculateMaxIntensity(readings) {
 
 ## 📊 Exemplos de Uso
 
-### **Exemplo 1 - Ciclo Detectado** ✅
+### **Exemplo 1 - Sem Ciclo** ❌
 ```javascript
 Entrada: [2, 5, 3, 8, 6, 9, 7]
 
