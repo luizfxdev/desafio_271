@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritual das Sombras - Ciclo Profano</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay loop muted playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Áudio de fundo -->
+    <audio id="theme-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="container">
+      <h1 class="title">🕯️ Ritual das Sombras 💀</h1>
+      <p class="subtitle">A Caçada do Ciclo Profano</p>
+
+      <!-- Input de Energia Espiritual -->
+      <div class="input-section">
+        <label for="energy-input">Leituras de Energia Espiritual:</label>
+        <input
+          type="text"
+          id="energy-input"
+          placeholder="Ex: 2, 5, 3, 8, 6, 9, 7"
+          aria-label="Digite os números separados por vírgula"
+        />
+      </div>
+
+      <!-- Botões de Ação -->
+      <div class="button-section">
+        <button class="ritual-btn" id="detect-btn" style="--clr: #ff2400">
+          <span>DETECTAR</span>
+          <i></i>
+        </button>
+        <button class="ritual-btn" id="return-btn" style="--clr: #9d00ff">
+          <span>RETORNAR</span>
+          <i></i>
+        </button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h2 class="result-title">📜 Revelações do Ritual</h2>
+        <div class="result-content" id="result-content">
+          <p class="placeholder-text">Aguardando invocação...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
